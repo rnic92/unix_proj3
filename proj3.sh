@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Nicolas Rohr
+# version 1.0
+# Apr 18 2021
+
+# Main menu portion of program
+# prints options in a while loop that exits on 10
+
 print_menu() {
 date -u
 nl="
@@ -18,14 +25,13 @@ echo "7. My disk usage"
 echo "8. My home file-tree"
 echo "9. Process operations"
 echo "10. Exit"
-echo "Enter your choice [1 - 10] "
-read invar
+read -p "Enter your choice [1 - 10] " invar
 }
-invar=0
+invar=0 # initalize to non-real selection
 while [ $invar != 10 ]
 do
 	print_menu
-	./selection.sh $invar
+	./selection.sh $invar # call selection.sh with selected value
 
 done
 exit

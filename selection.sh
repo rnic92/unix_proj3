@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Nicolas Rohr
+# version 1.0
+# Apr 18 2021
 selection=$1;
 
 print_continue() { # wait for enter
@@ -31,7 +34,7 @@ case $selection in
 	        echo "DNS domain : $(hostname -d)"
 		echo "Fully qualified domain name : $(hostname -f)"
 		echo "Network address (IP) : $(hostname -i)"
-		echo "DNS name servers (DNS IP) : $(hostname -d)"	
+		echo "DNS name servers (DNS IP) : $(hostname -d)"
 		print_continue
 		;;
 	3) # Network info
@@ -88,8 +91,7 @@ case $selection in
 	9)
 		./proc.sh
 		;;
-	*)
+	*) # no other response
 		;;
 esac
 exit
-

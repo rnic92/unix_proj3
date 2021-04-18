@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# Nicolas Rohr
+# version 1.0
+# Apr 18 2021
 # Process portion of project 3
 invar=0
 print_continue() {
@@ -29,7 +34,7 @@ case $invar in
 	3) #top
 		top
 		;;
-	4) #return
+	4) #return wlil exit when while loop is satisfied
 		;;
 	*) #nothing
 		;;
