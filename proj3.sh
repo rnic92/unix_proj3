@@ -25,6 +25,7 @@ invar=0
 while [ $invar != 10 ]
 do
 	print_menu
-	echo "your selection = $invar"
+	./selection.sh $invar
+
 done
 exit
