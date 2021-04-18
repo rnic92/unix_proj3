@@ -19,7 +19,7 @@ case $selection in
 		divider
 		echo "System Information"
 		divider
-
+		echo "Operating system : $(uname -s)"
 		/usr/bin/lsb_release -a
 		print_continue
 		;;
@@ -81,8 +81,9 @@ case $selection in
 		;;
 	8)
 		divider
-		echo " TODO file tree"
+		echo "Creating file named filetree.html"
 		divider
+		./project1_rnic92.sh /home filetree.html
 		;;
 	9)
 		./proc.sh

@@ -10,7 +10,7 @@ done
 }
 while [ $invar != 4 ]
 do
-echo "(Please enter the numbe of your selection below)"
+echo "(Please enter the number of your selection below)"
 echo "1. Show all processes"
 echo "2. Kill a process"
 echo "3. Bring up top"
