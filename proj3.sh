@@ -26,7 +26,7 @@ echo "8. My home file-tree"
 echo "9. Process operations"
 echo "10. Exit"
 read -p "Enter your choice [1 - 10] " invar
-if [ "invar" == '' || "invar" == ' ' ]; then
+if [ "$invar" == '' || "$invar" == ' ' ]; then
 	invar=0
 fi
 }
