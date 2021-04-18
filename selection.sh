@@ -30,7 +30,7 @@ case $selection in
 		divider
 		echo "Hostname and DNS information"
 		divider
-		echo "Hostname :$(hostname)"
+		echo "Hostname : $(hostname)"
 	        echo "DNS domain : $(hostname -d)"
 		echo "Fully qualified domain name : $(hostname -f)"
 		echo "Network address (IP) : $(hostname -i)"
