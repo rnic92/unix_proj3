@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Nicolas Rohr
 # Project 1
 # Version 1.2
